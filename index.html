@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather AI Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <h1>🌦 Weather AI Pro</h1>
+
+    <div class="controls">
+        <button onclick="toggleTheme()">🌗</button>
+        <button onclick="toggleUnit()">°C / °F</button>
+    </div>
+
+    <div class="search">
+        <input type="text" id="city" placeholder="Enter city..." />
+        <button onclick="getWeather()">Search</button>
+        <button onclick="saveCity()">⭐</button>
+    </div>
+
+    <div id="favorites"></div>
+
+    <div id="loading" class="hidden">Loading...</div>
+
+    <div id="weatherBox" class="hidden">
+        <h2 id="cityName"></h2>
+        <img id="icon" />
+        <p id="temp"></p>
+        <p id="condition"></p>
+        <p id="wind"></p>
+        <p id="aiAdvice" class="advice"></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
