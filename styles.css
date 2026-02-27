@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body.dark {
+    background: linear-gradient(135deg, #000000, #434343);
+}
+
+.app {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+    padding: 25px;
+    border-radius: 20px;
+    width: 350px;
+    color: white;
+    text-align: center;
+}
+
+.controls button,
+.search button {
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.search input {
+    padding: 8px;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.advice {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+#favorites {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+#favorites span {
+    cursor: pointer;
+    margin: 3px;
+    display: inline-block;
+}
